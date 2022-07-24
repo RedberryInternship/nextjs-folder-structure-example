@@ -1,1 +1,3 @@
-export { default as BlackButtonWithArrowRight } from './BlackButtonWithArrowRight';
+export * from './BlackLinkWithArrowRight';
+export * from './ImageWithQuote';
+export * from './FormWrapper';

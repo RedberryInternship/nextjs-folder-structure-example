@@ -1,7 +1,6 @@
-import { BlackButtonWithArrowRight } from 'components';
+import { BlackLinkWithArrowRight } from 'components';
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +19,7 @@ const Home: NextPage = () => {
           <br />
           who you are
         </h1>
-        <BlackButtonWithArrowRight
+        <BlackLinkWithArrowRight
           link='/personal-information'
           text='Get Started'
         />
