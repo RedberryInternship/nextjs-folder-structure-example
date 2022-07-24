@@ -1,1 +1,1 @@
-export * from './personalInformation';
+export * from './forms';

@@ -11,7 +11,7 @@ const FormWrapper: React.FC<PropsType> = (props) => {
         <div className='flex flex-col space-y-1 w-2/5 mt-12 '>
           <div className='flex items-center self-center w-3/4 justify-between'>
             <div
-              className={`px-4 py-2  rounded-xl ${
+              className={`w-12 justify-center h-11 flex items-center rounded-xl ${
                 props.currentStep >= 1
                   ? 'bg-emerald-50'
                   : 'border border-gray-300'
@@ -20,7 +20,15 @@ const FormWrapper: React.FC<PropsType> = (props) => {
               {props.currentStep === 1 ? 1 : <DoubleCheck />}
             </div>
             <div className='flex-grow border-b mx-4 border-gray-300 h-[1px]'></div>
-            <div className='px-4 py-2 border border-gray-300 rounded-xl'>2</div>
+            <div
+              className={`w-12 justify-center h-11 flex items-center rounded-xl ${
+                props.currentStep >= 2
+                  ? 'bg-emerald-50'
+                  : 'border border-gray-300'
+              }`}
+            >
+              2
+            </div>
           </div>
           <div className='flex justify-between'>
             <span>Personal information</span>

@@ -19,3 +19,9 @@ export const personalInformationValidationSchema = Yup.object({
     }),
   date_of_birth: Yup.date().required('date is required'),
 });
+
+export const chessExperienceValidationSchema = Yup.object({
+  experience_level: Yup.string().required('Experience level is required'),
+  character_id: Yup.string().required('Character id is required'),
+  already_participated: Yup.boolean().required('Already participated'),
+});

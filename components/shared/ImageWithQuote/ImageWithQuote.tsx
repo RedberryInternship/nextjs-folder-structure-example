@@ -19,6 +19,7 @@ const ImageWithQuote: React.FC<PropsType> = (props) => {
       <Image
         src={props.imageSrc}
         className='object-fill'
+        priority
         layout='fill'
         alt='landing image'
       />

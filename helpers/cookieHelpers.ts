@@ -1,9 +1,9 @@
 import { getCookie, hasCookie, setCookie } from 'cookies-next';
-import { PersonalInformation } from 'types';
+import { ChessExperience, PersonalInformation } from 'types';
 
 export const storeCookieInFieldsObject = (
   value: string,
-  key: keyof PersonalInformation
+  key: keyof PersonalInformation | keyof ChessExperience
 ) => {
   const cookieCheck = hasCookie('fields');
   let newCookies: {

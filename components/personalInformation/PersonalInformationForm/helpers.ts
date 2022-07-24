@@ -12,12 +12,6 @@ export const getFormInitialValue = () => {
     email = fields!.email ?? '';
     date_of_birth = fields!.date_of_birth ?? '';
   }
-  console.log({
-    name,
-    phone,
-    email,
-    date_of_birth,
-  });
   return {
     name,
     phone,

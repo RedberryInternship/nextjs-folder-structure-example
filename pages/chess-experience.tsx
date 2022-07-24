@@ -1,26 +1,23 @@
-import {
-  FormWrapper,
-  ImageWithQuote,
-  PersonalInformationForm,
-} from 'components';
+import { FormWrapper, ImageWithQuote, ChessExperienceForm } from 'components';
 
 const ChessExperience = () => {
   return (
     <>
       <ImageWithQuote
-        imageSrc='/assets/personal-information.png'
-        quoteLineOne='"when u see a good move,'
-        quoteLineTwo=' look for a better one"'
-        quoteAuthor='- emanuel lasker'
-        quoteAuthorAlignClass='self-left'
-        quoteMarginTopClass='mt-40'
+        imageSrc='/assets/chess-experience.png'
+        quoteLineOne='"Many have become chess masters'
+        quoteLineTwo=' No one has become the master of chess"'
+        quoteAuthor='- Siegbert tarrasch'
+        quoteAuthorAlignClass='self-rigtt'
+        quoteMarginTopClass='mt-44'
       />
       <FormWrapper
-        headerText='Start creating your account'
-        pageName='Personal information'
+        headerText='First Step Is Done, Continue To Finish Onboarding'
+        pageName='Chess experience'
         pageDescription='This is basic information field'
         currentStep={2}
       >
+        <ChessExperienceForm />
       </FormWrapper>
     </>
   );
