@@ -3,47 +3,33 @@
 
 # Project structure
 
-```
+```sh
+.env.example
 .eslintrc.json
 .gitignore
 .prettierrc.json
-README.md
 components
-   |-- icons
-   |   |-- ArrowRightWithCircle.tsx
-   |   |-- Check.tsx
-   |   |-- Crown.tsx
-   |   |-- DoubleCheck.tsx
-   |   |-- index.ts
+   |-- folder-with-page-name #[camelCase]
+   |   |-- component-folder #[PascalCase]
+   |   |   |-- component-jsx-file.tsx #[PascalCase]
+   |   |   |-- index.ts
+   |   |   |-- helpers.ts #[OPTIONAL]
+   |   |   |-- types.d.ts #[OPTIONAL]
+   |   |   |-- component-hook-file.tsx #[camelCase]
    |-- index.ts
-   |-- personalInformation
-   |   |-- Input
-   |   |   |-- Input.tsx
-   |   |   |-- helpers.ts
-   |   |   |-- index.ts
-   |   |   |-- types.d.ts
-   |   |-- PersonalInformationForm
-   |   |   |-- PersonalInformationForm.tsx
-   |   |   |-- helpers.ts
-   |   |   |-- index.ts
-   |   |   |-- usePersonalInformationForm.tsx
-   |   |-- index.ts
    |-- shared
-   |   |-- BlackLinkWithArrowRight
-   |   |   |-- BlackLinkWithArrowRight.tsx
+   |   |-- component-folder #[PascalCase]
+   |   |   |-- component-jsx-file.tsx #[PascalCase]
    |   |   |-- index.ts
-   |   |   |-- types.d.ts
-   |   |-- FormWrapper
-   |   |   |-- FormWrapper.tsx
-   |   |   |-- index.ts
-   |   |   |-- types.d.ts
-   |   |-- ImageWithQuote
-   |   |   |-- ImageWithQuote.tsx
-   |   |   |-- index.ts
-   |   |   |-- types.d.ts
+   |   |   |-- helpers.ts #[OPTIONAL]
+   |   |   |-- types.d.ts #[OPTIONAL]
+   |   |   |-- component-hook-file.tsx #[camelCase]
    |   |-- index.ts
+   |-- icons
+   |   |-- index.ts
+   |   |-- icon-name.tsx
 helpers
-   |-- cookieHelpers.ts
+   |-- [helper-file-name].ts
    |-- index.ts
 next-env.d.ts
 next.config.js
@@ -51,25 +37,25 @@ package-lock.json
 package.json
 pages
    |-- _app.tsx
-   |-- chess-experience.tsx
-   |-- index.tsx
-   |-- personal-information.tsx
+   |-- page-name.tsx
 postcss.config.js
 public
    |-- assets
-   |   |-- landing-image.png
-   |   |-- personal-information.png
+   |   |-- file.{anything}
    |-- favicon.ico
    |-- vercel.svg
 schemas
+   |-- file-name.ts
    |-- index.ts
-   |-- personalInformation.tsx
+services
+   |-- axios.ts
+   |-- index.ts
 styles
    |-- globals.css
 tailwind.config.js
 tsconfig.json
 types
-   |-- formFields.d.ts
    |-- index.ts
+   |-- module-file.d.ts
 
 ```
