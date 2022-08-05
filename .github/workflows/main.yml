@@ -5,18 +5,19 @@ on:
 
 jobs:
     deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: appleboy/ssh-action@v0.1.2
-          with:
-            host: ${{ secrets.SSH_HOST }}
-            key: ${{ secrets.SSH_KEY }}
-            username: ${{ secrets.SSH_USERNAME }}
-            script_stop: true
-            script: |
-              cd apps
-              cd nextjs-example
-              git pull
-              npm ci
-              npm run build
-              pm2 restart nextjs-example
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy 
+              uses: appleboy/ssh-action@v0.1.2
+              with:
+                host: ${{ secrets.SSH_HOST }}
+                key: ${{ secrets.SSH_KEY }}
+                username: ${{ secrets.SSH_USERNAME }}
+                script_stop: true
+                script: |
+                    cd apps
+                    cd nextjs-example
+                    git pull
+                    npm ci
+                    npm run build
+                    pm2 restart nextjs-example
