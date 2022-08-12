@@ -5,8 +5,8 @@ const ChessExperience = () => {
     <>
       <ImageWithQuote
         imageSrc='/assets/chess-experience.png'
-        quoteLineOne='"Many have become chess masters'
-        quoteLineTwo=' No one has become the master of chess"'
+        quoteLineOne='"this quote'
+        quoteLineTwo=' is dumb"'
         quoteAuthor='- Siegbert tarrasch'
         quoteAuthorAlignClass='self-rigtt'
         quoteMarginTopClass='mt-44'
