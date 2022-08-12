@@ -15,7 +15,7 @@ jobs:
                 script_stop: true
                 script: |
                     cd apps
-                    cd nextjs-example
+                    cd nextjs-folder-structure-example
                     git pull
                     npm ci
                     npm run build
