@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           chess says{' '}
           <span className='text-black text-base font-normal'>a lot about</span>{' '}
           <br />
-          who you are
+          who you are but not really :)
         </h1>
         <BlackLinkWithArrowRight
           link='/personal-information'
