@@ -14,9 +14,7 @@ const Home: NextPage = () => {
       </div>
       <div className='flex-grow flex flex-col items-start justify-center space-y-16 bg-orange-600 pl-20'>
         <h1 className='text-white text-8xl leading-[7rem] font-extrabold capitalize'>
-          chess says{' '}
-          <span className='text-black text-base font-normal'>a lot about</span>{' '}
-          <br />
+          chess says <br />
           who you are
         </h1>
         <BlackLinkWithArrowRight
