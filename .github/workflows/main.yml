@@ -1,0 +1,16 @@
+name: "test on pull request"
+on: [pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 18
+      - name: "copy .env file"
+        run: cp .env.example .env
+      - name: "run npm install"
+        run: npm ci
+      - name: "run test"
+        run: npm run lint
